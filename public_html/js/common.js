@@ -21,3 +21,13 @@ var data = {
 };
 
 $('#plugin').advertize(data);
+$('#plugin').draggable({
+    //axis: 'x',
+    //containment : '#divMax',
+    //cursor:'move',
+    revert:'invalid'
+});
+
+$('#drop').droppable({
+    accept: '#plugin'
+});
